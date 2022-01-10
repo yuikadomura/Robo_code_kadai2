@@ -146,7 +146,7 @@ $ git clone https://github.com/yuikadomura/Robo_code_kadai2.git
 
 $ cd ~/catkin_ws/src/Robosys_kadai2/
 
-$ cp ~/Robo_code_kadai2/scripts/ ~/catkin_ws/src/Robosys_kadai2/
+$ cp -r ~/Robo_code_kadai2/scripts/ ~/catkin_ws/src/Robosys_kadai2/
 
 ※この時点でRobosys_kadai2のパッケージの下にscripts/が来ていることを確認. 
 
