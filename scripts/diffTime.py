@@ -1,7 +1,10 @@
-//BSD 3-Clause Licence
-//Copyright (c) 2021 Ryuichi Ueda + Yui Kadomura. All rights reserved.
-
 #!/usr/bin/env python3
+
+"""
+BSD 3-Clause Licence
+Copyright (c) 2021 Ryuichi Ueda + Yui Kadomura. All rights reserved.
+
+"""
 import rospy
 from std_msgs.msg import Float64, String
 from datetime import datetime, timedelta, timezone
