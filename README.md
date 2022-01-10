@@ -93,6 +93,7 @@ rateを10倍にすると, 差分は1/10倍になった.
 
 ### 【ワークスペースの準備】
 
+#### 
 ####  ・ディレクトリを作成する
 
 $ cd
@@ -133,18 +134,25 @@ $ source ~/.bashrc
 
 $ cd ~/catkin_ws/src
 
+$ catkin_create_pkg Robosys_kadai2 rospy
+
 
 ####  ・インストール
 
-$ git clone https://github.com/yuikadomura/Robosys_kadai2.git 
+$ git clone https://github.com/yuikadomura/Robo_code_kadai2.git
+
+※ホームで行う.
 
 
-$ cd cd ~/catkin_ws
+$ cd ~/catkin_ws/src/Robosys_kadai2/
 
+$ cp ~/Robo_code_kadai2/scripts/ ~/catkin_ws/src/Robosys_kadai2/
+
+※この時点でRobosys_kadai2のパッケージの下にscripts/が来ていることを確認. 
+
+$ cd ~/catkin_ws/
 
 $ catkin_make
-
-
 
 
 
@@ -155,7 +163,6 @@ $ chmod +x ~/catkin_ws/src/Robosys_kadai2/scripts/getUnix.py
 
 
 $ chmod +x ~/catkin_ws/src/Robosys_kadai2/scripts/diffTime.py
-
 
 
 
@@ -186,7 +193,6 @@ $ rostopic echo /diffTime
 
 
 $ sudo poweroff
-
 
 
 
